@@ -24,3 +24,13 @@ protocol IMGCoordinator {
     ///   - data: input data
     func start(from presenting: UIViewController, with data: InputData)
 }
+
+extension IMGCoordinator {
+    /// Returns view controller if it exists, otherwise throws an exception.
+    /// This getter is used in places where absence of rootControlle is critical
+    /// there is no other way to continue running the app
+    func rootControllerOrFail() -> UIViewController {
+        guard let root = rootController else { fatalError("root controller required!") }
+        return root
+    }
+}

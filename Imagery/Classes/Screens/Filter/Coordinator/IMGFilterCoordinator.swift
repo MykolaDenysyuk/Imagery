@@ -32,7 +32,7 @@ class IMGFilterCoordinator: IMGCoordinator, IMGFilterCoordinatorInput {
     }
     
     func close(newParameters: IMGContent.Query?) {
-        guard let root = rootController else { fatalError("root controller is expected")}
+        let root = rootControllerOrFail()
         
         if let query = newParameters {
             data?.callback(query)
@@ -47,10 +47,8 @@ class IMGFilterCoordinator: IMGCoordinator, IMGFilterCoordinatorInput {
     }
     
     func showOptions(_ list: [String], lastSelected: Int?, complete: @escaping (Int) -> Void) {
-        guard let root = rootController else { fatalError("root controller is expected")}
-        
         let optionsController = IMGFilterOptionsViewController(list: list, selected: lastSelected, complete: complete)
-        root.show(optionsController, sender: nil)
+        rootControllerOrFail().show(optionsController, sender: nil)
     }
     
     

@@ -27,9 +27,8 @@ class IMGDetailsCoordinator: IMGCoordinator, IMGDetailsCoordinatorInput {
     }
 
     func showExport(url: URL) {
-        guard let root = rootController else { fatalError("root controller is required") }
         let share = UIActivityViewController(activityItems: [url], applicationActivities: nil)
-        root.present(share, animated: true, completion: nil)
+        rootControllerOrFail().present(share, animated: true, completion: nil)
     }
     
     func openInBrowser(url: URL) {
