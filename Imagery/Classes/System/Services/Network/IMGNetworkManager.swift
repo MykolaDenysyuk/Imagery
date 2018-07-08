@@ -13,7 +13,7 @@ extension URLSessionTask: IMGCancelable {}
 /// Concrete network service type
 struct IMGNetworkManager: IMGNetworkService {
 
-    let responseHandler: ResponseHandler
+    let responseHandler = ResponseHandler()
     
     func execute(request: URLRequest, onComplete: @escaping IMGNetworkCompletion) -> IMGCancelable {
         let session = URLSession.shared
