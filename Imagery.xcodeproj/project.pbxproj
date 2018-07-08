@@ -61,6 +61,7 @@
 		6FE5852B20F27D3800F6F095 /* IMGDetailsControlCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6FE5852920F27D3800F6F095 /* IMGDetailsControlCell.xib */; };
 		6FE5852E20F2801000F6F095 /* IMGDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE5852D20F2801000F6F095 /* IMGDetailsPresenter.swift */; };
 		6FE5853020F283BC00F6F095 /* IMGDetailsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE5852F20F283BC00F6F095 /* IMGDetailsCoordinator.swift */; };
+		6FE5853220F28A2900F6F095 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 6FE5853120F28A2900F6F095 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -133,6 +134,7 @@
 		6FE5852920F27D3800F6F095 /* IMGDetailsControlCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IMGDetailsControlCell.xib; sourceTree = "<group>"; };
 		6FE5852D20F2801000F6F095 /* IMGDetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IMGDetailsPresenter.swift; sourceTree = "<group>"; };
 		6FE5852F20F283BC00F6F095 /* IMGDetailsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IMGDetailsCoordinator.swift; sourceTree = "<group>"; };
+		6FE5853120F28A2900F6F095 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -363,6 +365,7 @@
 		6FAEBEC020F106D2005F771F /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				6FE5853120F28A2900F6F095 /* README.md */,
 				6F09B6E020F168860002F385 /* Cartfile */,
 				6FAEBEA520F0FDF4005F771F /* Assets.xcassets */,
 				6FAEBEA720F0FDF4005F771F /* LaunchScreen.storyboard */,
@@ -541,6 +544,7 @@
 				6FE5852120F2759900F6F095 /* IMGDetailsTopCell.xib in Resources */,
 				6FE5852B20F27D3800F6F095 /* IMGDetailsControlCell.xib in Resources */,
 				6F09B6E120F168860002F385 /* Cartfile in Resources */,
+				6FE5853220F28A2900F6F095 /* README.md in Resources */,
 				6FAEBEA620F0FDF4005F771F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
