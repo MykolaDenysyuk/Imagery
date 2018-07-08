@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="IMGDetailsInfoCell" rowHeight="90" id="KGk-i7-Jjw" customClass="IMGDetailsInfoCell" customModule="Imagery" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="90"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="89.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="lpE-Zs-rs1" userLabel="Container">
+                        <rect key="frame" x="79" y="8" width="163" height="29"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="WHU-XO-VK0" userLabel="Likes">
+                                <rect key="frame" x="0.0" y="0.0" width="45.5" height="29"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🖤" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JEE-Y5-urC" userLabel="Caption">
+                                        <rect key="frame" x="0.0" y="0.0" width="23" height="29"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gg0-md-Lab" userLabel="Value">
+                                        <rect key="frame" x="31" y="0.0" width="14.5" height="29"/>
+                                        <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="AiE-Y4-sg2" userLabel="Favorites">
+                                <rect key="frame" x="63.5" y="0.0" width="37" height="29"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="⭐️" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vki-eq-YNQ" userLabel="Caption">
+                                        <rect key="frame" x="0.0" y="0.0" width="23" height="29"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ptg-K7-RR7" userLabel="Value">
+                                        <rect key="frame" x="31" y="0.0" width="6" height="29"/>
+                                        <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="9VP-iM-RmJ" userLabel="Downloads">
+                                <rect key="frame" x="118.5" y="0.0" width="44.5" height="29"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="⬇️" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NRo-ET-m0A" userLabel="Caption">
+                                        <rect key="frame" x="0.0" y="0.0" width="23" height="29"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KAc-cX-jjG" userLabel="Value">
+                                        <rect key="frame" x="31" y="0.0" width="13.5" height="29"/>
+                                        <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                    </stackView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lock, Stock and Two Smoking Barrels" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r7K-aH-DGP" userLabel="Tags">
+                        <rect key="frame" x="44" y="51" width="233" height="26"/>
+                        <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="lpE-Zs-rs1" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="Bqn-az-Gpc"/>
+                    <constraint firstItem="lpE-Zs-rs1" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="DO5-JB-aDC"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="r7K-aH-DGP" secondAttribute="bottom" constant="2" id="H5I-Ub-jkX"/>
+                    <constraint firstItem="r7K-aH-DGP" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="LT0-35-3nX"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="r7K-aH-DGP" secondAttribute="trailing" constant="16" id="NYl-WB-qwm"/>
+                    <constraint firstItem="lpE-Zs-rs1" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="Nvy-Xg-PbA"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="lpE-Zs-rs1" secondAttribute="trailing" constant="8" id="QeS-Bi-kSn"/>
+                    <constraint firstItem="r7K-aH-DGP" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="SXu-mR-lfd"/>
+                    <constraint firstItem="r7K-aH-DGP" firstAttribute="top" secondItem="lpE-Zs-rs1" secondAttribute="bottom" constant="14" id="cuy-Ko-UJa"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="downloadsLabel" destination="KAc-cX-jjG" id="DAn-na-ho7"/>
+                <outlet property="favoritesLabel" destination="ptg-K7-RR7" id="TUU-Pg-Vkk"/>
+                <outlet property="likesLabel" destination="gg0-md-Lab" id="tyC-aN-Uqv"/>
+                <outlet property="tags" destination="r7K-aH-DGP" id="dBZ-U3-urR"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="77"/>
+        </tableViewCell>
+    </objects>
+</document>
