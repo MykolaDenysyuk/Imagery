@@ -8,6 +8,8 @@
 
 import UIKit
 
+/// The main controller of Filter module.
+/// It presents filtering categories and their current values
 class IMGFilterViewController<Datasource, EventsHandler>: UITableViewController
 where
     Datasource: IMGListViewDatasource, Datasource.Element == IMGFileCategoryItem,
@@ -18,7 +20,7 @@ where
     
     let datasource: Datasource
     let eventsHandler: EventsHandler
-    var isDataRequested = false
+    private var isDataRequested = false
     
     // MARK: Initializer
     

@@ -10,6 +10,8 @@ import Foundation
 
 extension IMGContentManager {
     class RequestFactory {
+        /// Maps given parameters into the list of key-value pairs.
+        /// The result of this method is then used to build url request
         func createQueryParameters(apiKey: String, query: IMGContent.Query) -> [String: Any] {
             var parameters: [String: Any] = ["key": apiKey]
             if let search = query.search {
@@ -32,6 +34,7 @@ extension IMGContentManager {
         }
     }
     
+    /// Generic data parser for Codable types
     class ContentDataParser<T: Codable> {
         func parse(data: Data) -> IMGResult<T, Error> {
             do {
@@ -44,6 +47,7 @@ extension IMGContentManager {
         }
     }
     
+    /// Handles response retrieved from network service
     class ResponseHandler {
         let dataParser: ContentDataParser<IMGContent.Response>
         

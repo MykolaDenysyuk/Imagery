@@ -20,8 +20,8 @@ class IMGDetailsTopCell: UITableViewCell {
         }
     }
     @IBOutlet private weak var userName: UILabel!
-    private var mainImageFetch: IMGCancelable?
-    private var userImageFetch: IMGCancelable?
+    private private var mainImageFetch: IMGCancelable?
+    private private var userImageFetch: IMGCancelable?
     
     // MARK: Actions
  

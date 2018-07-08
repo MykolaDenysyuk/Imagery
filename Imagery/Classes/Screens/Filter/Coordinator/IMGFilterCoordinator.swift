@@ -8,11 +8,14 @@
 
 import UIKit
 
+/// The data required to start Filter module
+/// see IMGFilterCoordinator.start()
 struct IMGFilterCoordinatorData {
     let query: IMGContent.Query
     let callback: (IMGContent.Query) -> Void
 }
 
+/// Entry point for Filter module
 class IMGFilterCoordinator: IMGCoordinator, IMGFilterCoordinatorInput {
 
     // MARK: Vars

@@ -9,6 +9,10 @@
 import UIKit
 
 /// Represents list of options for filter's category
+/// NOTE:
+/// To follow general architectural solution this controller has to have
+/// its own Presenter. But for sake of simplicty the controller is left to
+/// handle events by its own
 class IMGFilterOptionsViewController: UITableViewController {
 
 

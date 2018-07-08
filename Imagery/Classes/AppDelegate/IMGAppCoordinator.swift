@@ -8,7 +8,10 @@
 
 import UIKit
 
+/// Main app's coordinator
+/// It starts the views hierarchy
 class IMGAppCoordinator {
+    /// Create main window with a root controller
     func start() -> UIWindow {
         let window = UIWindow(frame: UIScreen.main.bounds)
         let rootController = UINavigationController()

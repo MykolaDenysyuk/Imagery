@@ -17,7 +17,7 @@ where
     
     let datasource: Datasource
     unowned let eventsHandler: EventsHandler
-    var isDataRequsted = false
+    private var isDataRequsted = false
     
     // MARK: Initializer
     

@@ -8,6 +8,8 @@
 
 import UIKit
 
+
+/// An overlay view to dimm content view durring loading proccess
 class IMGHomeLoadingOverlay: UIView, IMGLoadingIndicator {
 
     private let indicator = UIActivityIndicatorView(activityIndicatorStyle: .whiteLarge)

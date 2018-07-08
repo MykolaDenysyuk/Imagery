@@ -8,6 +8,8 @@
 
 import Foundation
 
+typealias IMGContentCompletion = (IMGResult<IMGContent.Response, Error>) -> Void
+
 /// Namespace for content service's data models
 enum IMGContent {
     /// Parameters for search query
@@ -21,6 +23,7 @@ enum IMGContent {
         static let `default` = Query(search: nil, pageSize: nil, page: nil, category: nil, order: nil)
     }
     
+    /// Particular content item
     struct Item: Codable {
         let id: Int
         let pageURL: String

@@ -8,6 +8,7 @@
 
 import Foundation
 
+/// Filter category display item
 struct IMGFileCategoryItem {
     let name: String
     var value: String

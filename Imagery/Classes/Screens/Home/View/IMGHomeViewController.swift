@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 class IMGHomeViewController<Datasource, EventsHandler>: UICollectionViewController, UISearchBarDelegate, UICollectionViewDelegateFlowLayout, IMGLoadingIndicator
 where
     Datasource: IMGHomeViewDatasource,
@@ -15,6 +16,7 @@ EventsHandler: IMGHomeViewOutput{
     
     // MARK: Vars
     
+    /// ratio to calculate displayed items size
     let itemRatio: CGFloat = 3/4
     let datasource: Datasource
     unowned let eventsHandler: EventsHandler

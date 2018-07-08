@@ -8,9 +8,7 @@
 
 import Foundation
 
-
-typealias IMGContentCompletion = (IMGResult<IMGContent.Response, Error>) -> Void
-
+/// Responsible for fetching content from any images sharring provider
 protocol IMGContentService {
     func search(query: IMGContent.Query, onComplete: @escaping IMGContentCompletion) -> IMGCancelable?
 }
