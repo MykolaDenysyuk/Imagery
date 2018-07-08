@@ -18,6 +18,8 @@ class IMGAppCoordinator {
         let home = IMGHomeCoordinator()
         home.start(from: rootController, with: nil)
         
+        rootController.navigationBar.titleTextAttributes = AppDelegate.appTitleAttributes
+        
         return window
     }
 }

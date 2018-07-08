@@ -12,6 +12,9 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var window: UIWindow?
+    static let appTitleAttributes: [NSAttributedStringKey : Any] = [.font : UIFont.imgRegularText(size: 18),
+                                                             .foregroundColor: UIColor.darkGray]
+
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
@@ -44,9 +47,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func setupAppearance() {
-        let attributes: [NSAttributedStringKey : Any] = [.font : UIFont.imgRegularText(size: 18),
-                                                         .foregroundColor: UIColor.darkGray]
-        UIBarButtonItem.appearance().setTitleTextAttributes(attributes,
+        UIBarButtonItem.appearance().setTitleTextAttributes(AppDelegate.appTitleAttributes,
                                                             for: .normal)
         UINavigationBar.appearance().tintColor = .darkGray
         UITextField.appearance(whenContainedInInstancesOf: [UISearchBar.self])
