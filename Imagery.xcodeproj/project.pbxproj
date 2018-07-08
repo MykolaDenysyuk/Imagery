@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6F09B6DF20F135FE0002F385 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F09B6DE20F135FE0002F385 /* Main.storyboard */; };
 		6F09B6E120F168860002F385 /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = 6F09B6E020F168860002F385 /* Cartfile */; };
 		6F09B6E320F16A8E0002F385 /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F09B6E220F16A8E0002F385 /* Kingfisher.framework */; };
 		6F30434820F2179F001D4151 /* IMGImageCacheManager+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F30434720F2179F001D4151 /* IMGImageCacheManager+Helpers.swift */; };
@@ -48,7 +47,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		6F09B6DE20F135FE0002F385 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		6F09B6E020F168860002F385 /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = SOURCE_ROOT; };
 		6F09B6E220F16A8E0002F385 /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = Carthage/Build/iOS/Kingfisher.framework; sourceTree = "<group>"; };
 		6F30434720F2179F001D4151 /* IMGImageCacheManager+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "IMGImageCacheManager+Helpers.swift"; sourceTree = "<group>"; };
@@ -237,7 +235,6 @@
 		6FAEBEC020F106D2005F771F /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				6F09B6DE20F135FE0002F385 /* Main.storyboard */,
 				6F09B6E020F168860002F385 /* Cartfile */,
 				6FAEBEA520F0FDF4005F771F /* Assets.xcassets */,
 				6FAEBEA720F0FDF4005F771F /* LaunchScreen.storyboard */,
@@ -369,7 +366,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6F09B6DF20F135FE0002F385 /* Main.storyboard in Resources */,
 				6FAEBEA920F0FDF4005F771F /* LaunchScreen.storyboard in Resources */,
 				6F09B6E120F168860002F385 /* Cartfile in Resources */,
 				6FAEBEA620F0FDF4005F771F /* Assets.xcassets in Resources */,
