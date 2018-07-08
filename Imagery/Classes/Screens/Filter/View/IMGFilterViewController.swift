@@ -39,6 +39,7 @@ where
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.rowHeight = 60
         setupTopBar()
     }
     

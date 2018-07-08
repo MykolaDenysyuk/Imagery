@@ -60,7 +60,7 @@ class IMGFilterOptionsViewController: UITableViewController {
     
     func close() {
         if let navigation = self.navigationController {
-            navigationController?.popViewController(animated: true)
+            navigation.popViewController(animated: true)
         }
         else {
             dismiss(animated: true, completion: nil)

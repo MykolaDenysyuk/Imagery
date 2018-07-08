@@ -135,5 +135,6 @@ EventsHandler: IMGHomeViewOutput{
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         eventsHandler.view(self, didSearch: searchBar.text)
+        searchBar.resignFirstResponder()
     }
 }

@@ -37,11 +37,13 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bjg-57-uIN" userLabel="User image">
                                 <rect key="frame" x="196" y="0.0" width="100" height="100"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="3Xt-Y5-Wkt"/>
-                                    <constraint firstAttribute="width" constant="100" id="4Zt-7E-2rx"/>
+                                    <constraint firstAttribute="width" secondItem="bjg-57-uIN" secondAttribute="height" id="SwT-EF-E4s"/>
                                 </constraints>
                             </imageView>
                         </subviews>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="100" id="fQO-GG-DcF"/>
+                        </constraints>
                     </stackView>
                 </subviews>
                 <constraints>
