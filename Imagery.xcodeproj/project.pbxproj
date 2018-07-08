@@ -28,12 +28,27 @@
 		6F36EC1320F18271001E54AF /* IMGContentService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F36EC1220F18271001E54AF /* IMGContentService.swift */; };
 		6F36EC1820F1882C001E54AF /* IMGResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F36EC1720F1882C001E54AF /* IMGResult.swift */; };
 		6F36EC1A20F191F7001E54AF /* IMGNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F36EC1920F191F7001E54AF /* IMGNetworkManager.swift */; };
+		6F7590FB20F24995000C00F5 /* IMGHomeCoordinatorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7590FA20F24995000C00F5 /* IMGHomeCoordinatorInput.swift */; };
+		6F7590FE20F24A71000C00F5 /* IMGListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7590FD20F24A71000C00F5 /* IMGListView.swift */; };
+		6F75910020F24BB8000C00F5 /* IMGCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7590FF20F24BB8000C00F5 /* IMGCoordinator.swift */; };
+		6F75910220F24D8D000C00F5 /* IMGHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F75910120F24D8D000C00F5 /* IMGHomeViewController.swift */; };
+		6F75910520F24DD4000C00F5 /* IMGHomeViewInterfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F75910420F24DD4000C00F5 /* IMGHomeViewInterfaces.swift */; };
+		6F75910820F25015000C00F5 /* IMGHomeItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F75910620F25015000C00F5 /* IMGHomeItemCell.swift */; };
+		6F75910920F25015000C00F5 /* IMGHomeItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F75910720F25015000C00F5 /* IMGHomeItemCell.xib */; };
+		6F75910B20F252CD000C00F5 /* IMGReusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F75910A20F252CD000C00F5 /* IMGReusable.swift */; };
 		6FAEBE9F20F0FDF3005F771F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FAEBE9E20F0FDF3005F771F /* AppDelegate.swift */; };
 		6FAEBEA620F0FDF4005F771F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6FAEBEA520F0FDF4005F771F /* Assets.xcassets */; };
 		6FAEBEA920F0FDF4005F771F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FAEBEA720F0FDF4005F771F /* LaunchScreen.storyboard */; };
 		6FC818AE20F1FE0E00478BCD /* IMGContentService+DataModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FC818AD20F1FE0E00478BCD /* IMGContentService+DataModels.swift */; };
 		6FC818B120F2063800478BCD /* IMGImageCacheService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FC818B020F2063800478BCD /* IMGImageCacheService.swift */; };
 		6FC818B320F20B8E00478BCD /* IMGImageCacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FC818B220F20B8E00478BCD /* IMGImageCacheManager.swift */; };
+		6FE5850820F25A4800F6F095 /* IMGHomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE5850720F25A4800F6F095 /* IMGHomePresenter.swift */; };
+		6FE5850A20F25CEE00F6F095 /* IMGAlertsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE5850920F25CEE00F6F095 /* IMGAlertsCoordinator.swift */; };
+		6FE5850C20F2600000F6F095 /* IMGAppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE5850B20F2600000F6F095 /* IMGAppCoordinator.swift */; };
+		6FE5850E20F2606200F6F095 /* IMGHomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE5850D20F2606200F6F095 /* IMGHomeCoordinator.swift */; };
+		6FE5851020F2632500F6F095 /* UIFont+Extra.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE5850F20F2632500F6F095 /* UIFont+Extra.swift */; };
+		6FE5851220F26AFB00F6F095 /* IMGLoadingIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE5851120F26AFB00F6F095 /* IMGLoadingIndicator.swift */; };
+		6FE5851420F26C5900F6F095 /* IMGHomeLoadingOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE5851320F26C5900F6F095 /* IMGHomeLoadingOverlay.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +84,14 @@
 		6F36EC1220F18271001E54AF /* IMGContentService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IMGContentService.swift; sourceTree = "<group>"; };
 		6F36EC1720F1882C001E54AF /* IMGResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IMGResult.swift; sourceTree = "<group>"; };
 		6F36EC1920F191F7001E54AF /* IMGNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IMGNetworkManager.swift; sourceTree = "<group>"; };
+		6F7590FA20F24995000C00F5 /* IMGHomeCoordinatorInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IMGHomeCoordinatorInput.swift; sourceTree = "<group>"; };
+		6F7590FD20F24A71000C00F5 /* IMGListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IMGListView.swift; sourceTree = "<group>"; };
+		6F7590FF20F24BB8000C00F5 /* IMGCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IMGCoordinator.swift; sourceTree = "<group>"; };
+		6F75910120F24D8D000C00F5 /* IMGHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IMGHomeViewController.swift; sourceTree = "<group>"; };
+		6F75910420F24DD4000C00F5 /* IMGHomeViewInterfaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IMGHomeViewInterfaces.swift; sourceTree = "<group>"; };
+		6F75910620F25015000C00F5 /* IMGHomeItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IMGHomeItemCell.swift; sourceTree = "<group>"; };
+		6F75910720F25015000C00F5 /* IMGHomeItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IMGHomeItemCell.xib; sourceTree = "<group>"; };
+		6F75910A20F252CD000C00F5 /* IMGReusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IMGReusable.swift; sourceTree = "<group>"; };
 		6FAEBE9B20F0FDF3005F771F /* Imagery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Imagery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FAEBE9E20F0FDF3005F771F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6FAEBEA520F0FDF4005F771F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -79,6 +102,13 @@
 		6FC818AD20F1FE0E00478BCD /* IMGContentService+DataModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "IMGContentService+DataModels.swift"; sourceTree = "<group>"; };
 		6FC818B020F2063800478BCD /* IMGImageCacheService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IMGImageCacheService.swift; sourceTree = "<group>"; };
 		6FC818B220F20B8E00478BCD /* IMGImageCacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IMGImageCacheManager.swift; sourceTree = "<group>"; };
+		6FE5850720F25A4800F6F095 /* IMGHomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IMGHomePresenter.swift; sourceTree = "<group>"; };
+		6FE5850920F25CEE00F6F095 /* IMGAlertsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IMGAlertsCoordinator.swift; sourceTree = "<group>"; };
+		6FE5850B20F2600000F6F095 /* IMGAppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IMGAppCoordinator.swift; sourceTree = "<group>"; };
+		6FE5850D20F2606200F6F095 /* IMGHomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IMGHomeCoordinator.swift; sourceTree = "<group>"; };
+		6FE5850F20F2632500F6F095 /* UIFont+Extra.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extra.swift"; sourceTree = "<group>"; };
+		6FE5851120F26AFB00F6F095 /* IMGLoadingIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IMGLoadingIndicator.swift; sourceTree = "<group>"; };
+		6FE5851320F26C5900F6F095 /* IMGHomeLoadingOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IMGHomeLoadingOverlay.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,10 +177,45 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		6F30436820F248AC001D4151 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				6F30436B20F248D0001D4151 /* Details */,
+				6F30436A20F248C6001D4151 /* Filter */,
+				6F30436920F248BD001D4151 /* Home */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		6F30436920F248BD001D4151 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				6F75910320F24D94000C00F5 /* View */,
+				6F7590FC20F24A41000C00F5 /* Presenter */,
+				6F7590F920F24938000C00F5 /* Coordinator */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		6F30436A20F248C6001D4151 /* Filter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Filter;
+			sourceTree = "<group>";
+		};
+		6F30436B20F248D0001D4151 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
 		6F36EBFF20F1751F001E54AF /* AppDelegate */ = {
 			isa = PBXGroup;
 			children = (
 				6FAEBE9E20F0FDF3005F771F /* AppDelegate.swift */,
+				6FE5850B20F2600000F6F095 /* IMGAppCoordinator.swift */,
 			);
 			path = AppDelegate;
 			sourceTree = "<group>";
@@ -169,7 +234,12 @@
 		6F36EC0720F17634001E54AF /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				6FE5850920F25CEE00F6F095 /* IMGAlertsCoordinator.swift */,
 				6F36EC0920F177D2001E54AF /* IMGCancelable.swift */,
+				6F7590FF20F24BB8000C00F5 /* IMGCoordinator.swift */,
+				6F7590FD20F24A71000C00F5 /* IMGListView.swift */,
+				6FE5851120F26AFB00F6F095 /* IMGLoadingIndicator.swift */,
+				6F75910A20F252CD000C00F5 /* IMGReusable.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -178,6 +248,7 @@
 			isa = PBXGroup;
 			children = (
 				6F36EC0F20F17F0A001E54AF /* URLComponents+Query.swift */,
+				6FE5850F20F2632500F6F095 /* UIFont+Extra.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -189,6 +260,35 @@
 				6F36EC0D20F17C7D001E54AF /* IMGLocalizedError.swift */,
 			);
 			path = DataModels;
+			sourceTree = "<group>";
+		};
+		6F7590F920F24938000C00F5 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				6F7590FA20F24995000C00F5 /* IMGHomeCoordinatorInput.swift */,
+				6FE5850D20F2606200F6F095 /* IMGHomeCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		6F7590FC20F24A41000C00F5 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				6FE5850720F25A4800F6F095 /* IMGHomePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		6F75910320F24D94000C00F5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6F75910420F24DD4000C00F5 /* IMGHomeViewInterfaces.swift */,
+				6F75910120F24D8D000C00F5 /* IMGHomeViewController.swift */,
+				6F75910620F25015000C00F5 /* IMGHomeItemCell.swift */,
+				6F75910720F25015000C00F5 /* IMGHomeItemCell.xib */,
+				6FE5851320F26C5900F6F095 /* IMGHomeLoadingOverlay.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		6FAEBE9220F0FDF3005F771F = {
@@ -247,6 +347,7 @@
 			isa = PBXGroup;
 			children = (
 				6F36EBFF20F1751F001E54AF /* AppDelegate */,
+				6F30436820F248AC001D4151 /* Screens */,
 				6F36EC0620F1762E001E54AF /* System */,
 			);
 			path = Classes;
@@ -367,6 +468,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6FAEBEA920F0FDF4005F771F /* LaunchScreen.storyboard in Resources */,
+				6F75910920F25015000C00F5 /* IMGHomeItemCell.xib in Resources */,
 				6F09B6E120F168860002F385 /* Cartfile in Resources */,
 				6FAEBEA620F0FDF4005F771F /* Assets.xcassets in Resources */,
 			);
@@ -407,19 +509,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F7590FE20F24A71000C00F5 /* IMGListView.swift in Sources */,
+				6FE5850820F25A4800F6F095 /* IMGHomePresenter.swift in Sources */,
+				6F75910820F25015000C00F5 /* IMGHomeItemCell.swift in Sources */,
 				6F30434820F2179F001D4151 /* IMGImageCacheManager+Helpers.swift in Sources */,
+				6FE5850C20F2600000F6F095 /* IMGAppCoordinator.swift in Sources */,
 				6FC818B320F20B8E00478BCD /* IMGImageCacheManager.swift in Sources */,
 				6F36EC1820F1882C001E54AF /* IMGResult.swift in Sources */,
+				6FE5851020F2632500F6F095 /* UIFont+Extra.swift in Sources */,
+				6F75910020F24BB8000C00F5 /* IMGCoordinator.swift in Sources */,
+				6F7590FB20F24995000C00F5 /* IMGHomeCoordinatorInput.swift in Sources */,
+				6FE5850A20F25CEE00F6F095 /* IMGAlertsCoordinator.swift in Sources */,
 				6F30435920F22EF4001D4151 /* IMGContentManager+Helpers.swift in Sources */,
 				6F36EC1020F17F0A001E54AF /* URLComponents+Query.swift in Sources */,
 				6FC818B120F2063800478BCD /* IMGImageCacheService.swift in Sources */,
+				6F75910220F24D8D000C00F5 /* IMGHomeViewController.swift in Sources */,
+				6F75910B20F252CD000C00F5 /* IMGReusable.swift in Sources */,
 				6F36EC1A20F191F7001E54AF /* IMGNetworkManager.swift in Sources */,
 				6F36EC0A20F177D2001E54AF /* IMGCancelable.swift in Sources */,
+				6FE5851220F26AFB00F6F095 /* IMGLoadingIndicator.swift in Sources */,
+				6F75910520F24DD4000C00F5 /* IMGHomeViewInterfaces.swift in Sources */,
+				6FE5851420F26C5900F6F095 /* IMGHomeLoadingOverlay.swift in Sources */,
 				6F30435720F22E34001D4151 /* IMGContentManager.swift in Sources */,
 				6FC818AE20F1FE0E00478BCD /* IMGContentService+DataModels.swift in Sources */,
 				6FAEBE9F20F0FDF3005F771F /* AppDelegate.swift in Sources */,
 				6F36EC1320F18271001E54AF /* IMGContentService.swift in Sources */,
 				6F36EC0520F1760D001E54AF /* IMGNetworkService.swift in Sources */,
+				6FE5850E20F2606200F6F095 /* IMGHomeCoordinator.swift in Sources */,
 				6F36EC0E20F17C7D001E54AF /* IMGLocalizedError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

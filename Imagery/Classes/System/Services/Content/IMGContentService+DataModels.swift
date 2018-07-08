@@ -17,6 +17,8 @@ enum IMGContent {
         let page: Int?
         let category: String?
         let order: String?
+        
+        static let `default` = Query(search: nil, pageSize: nil, page: nil, category: nil, order: nil)
     }
     
     struct Item: Codable {
