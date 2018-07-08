@@ -21,7 +21,6 @@ struct IMGNetworkManager: IMGNetworkService {
             self.responseHandler.handle(data: $0, response: $1, error: $2, complete: onComplete)
         }
         task.resume()
-        task.cancel()
         return task
     }
 }
