@@ -12,6 +12,7 @@ class IMGDetailsTopCell: UITableViewCell {
 
     // MARK: Vars
     
+    @IBOutlet private weak var blurredMainImageView: UIImageView!
     @IBOutlet private weak var mainImageView: UIImageView!
     @IBOutlet private weak var userImageView: UIImageView! {
         didSet {
@@ -39,6 +40,7 @@ class IMGDetailsTopCell: UITableViewCell {
             mainImageFetch =
                 imageCache.getImage(from: mainImageUrl, thumbnailImage: data.previewImagePath) {
                     [weak self] (image) in
+                    self?.blurredMainImageView.image = image
                     self?.mainImageView.fadeSwitch(new: image)
             }
         }

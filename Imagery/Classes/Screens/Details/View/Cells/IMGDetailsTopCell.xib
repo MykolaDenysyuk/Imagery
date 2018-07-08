@@ -19,8 +19,20 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="290.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ODd-ZW-7Wd" userLabel="Main image">
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rSa-6r-Sk1" userLabel="Blurred Image">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="240"/>
+                    </imageView>
+                    <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R2x-zb-OJh">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="240"/>
+                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="c1F-vx-oza">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="240"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        </view>
+                        <blurEffect style="light"/>
+                    </visualEffectView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ODd-ZW-7Wd" userLabel="Main image">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="240"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="width" secondItem="ODd-ZW-7Wd" secondAttribute="height" multiplier="4:3" id="KYe-tl-DrJ"/>
                         </constraints>
@@ -48,15 +60,24 @@
                 </subviews>
                 <constraints>
                     <constraint firstItem="pve-ps-aC0" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="99G-gj-Qw3"/>
-                    <constraint firstAttribute="bottom" secondItem="pve-ps-aC0" secondAttribute="bottom" constant="10.5" id="CAu-0Q-Qve"/>
+                    <constraint firstAttribute="bottom" secondItem="pve-ps-aC0" secondAttribute="bottom" priority="999" constant="10.5" id="CAu-0Q-Qve"/>
+                    <constraint firstItem="rSa-6r-Sk1" firstAttribute="height" secondItem="ODd-ZW-7Wd" secondAttribute="height" id="DyB-JQ-Gdh"/>
                     <constraint firstItem="ODd-ZW-7Wd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Lv7-bC-nOL"/>
+                    <constraint firstItem="rSa-6r-Sk1" firstAttribute="centerX" secondItem="ODd-ZW-7Wd" secondAttribute="centerX" id="Mmy-gj-7sC"/>
                     <constraint firstAttribute="trailing" secondItem="pve-ps-aC0" secondAttribute="trailing" constant="16" id="Rz5-Ux-Vrw"/>
+                    <constraint firstItem="R2x-zb-OJh" firstAttribute="centerY" secondItem="rSa-6r-Sk1" secondAttribute="centerY" id="ZAW-JK-1kX"/>
+                    <constraint firstItem="R2x-zb-OJh" firstAttribute="centerX" secondItem="rSa-6r-Sk1" secondAttribute="centerX" id="e7g-Zr-Swf"/>
                     <constraint firstItem="ODd-ZW-7Wd" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="eAv-0f-ftd"/>
+                    <constraint firstItem="R2x-zb-OJh" firstAttribute="height" secondItem="rSa-6r-Sk1" secondAttribute="height" id="fAJ-ae-ESC"/>
+                    <constraint firstItem="rSa-6r-Sk1" firstAttribute="width" secondItem="ODd-ZW-7Wd" secondAttribute="width" id="fXG-ae-Vd8"/>
+                    <constraint firstItem="rSa-6r-Sk1" firstAttribute="centerY" secondItem="ODd-ZW-7Wd" secondAttribute="centerY" id="qlX-Yq-cBp"/>
+                    <constraint firstItem="R2x-zb-OJh" firstAttribute="width" secondItem="rSa-6r-Sk1" secondAttribute="width" id="rPx-Bk-REs"/>
                     <constraint firstAttribute="trailing" secondItem="ODd-ZW-7Wd" secondAttribute="trailing" id="sDr-sW-EpI"/>
                     <constraint firstItem="pve-ps-aC0" firstAttribute="top" secondItem="ODd-ZW-7Wd" secondAttribute="bottom" constant="-60" id="tVx-cQ-pgV"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
+                <outlet property="blurredMainImageView" destination="rSa-6r-Sk1" id="05c-QL-ely"/>
                 <outlet property="mainImageView" destination="ODd-ZW-7Wd" id="2k5-7t-Nuf"/>
                 <outlet property="userImageView" destination="bjg-57-uIN" id="J4d-Oc-QP1"/>
                 <outlet property="userName" destination="lqd-FV-Hkj" id="AB8-Lp-UA0"/>
