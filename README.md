@@ -1,2 +1,2 @@
 # Imagery
-Simple image browsing app that uses pixabay.com API
+Simple images browsing app that uses pixabay.com API
