@@ -24,13 +24,17 @@ class IMGHomeCoordinator: IMGCoordinator, IMGHomeCoordinatorInput {
             let container = UINavigationController(rootViewController: controller)
             presenting.show(container, sender: nil)
         }
+        rootController = controller
     }
     
     func showFilter(callback: (Any) -> Void) {
         // todo
     }
     
-    func showDetails(for itme: IMGContent.Item) {
-        // todo
+    func showDetails(for item: IMGContent.Item) {
+        guard let root = rootController else { fatalError("root controller required!") }
+        
+        let details = IMGDetailsCoordinator()
+        details.start(from: root, with: item)
     }
 }

@@ -15,5 +15,5 @@ protocol IMGHomeCoordinatorInput: IMGAlertsCoordinator {
     ///                       with object that describes selected filter's values
     func showFilter(callback: (Any) -> Void) // todo
     /// Show screen with details for given item
-    func showDetails(for itme: IMGContent.Item)
+    func showDetails(for item: IMGContent.Item)
 }

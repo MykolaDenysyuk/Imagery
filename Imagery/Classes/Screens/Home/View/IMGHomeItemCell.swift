@@ -16,19 +16,14 @@ class IMGHomeItemCell: UICollectionViewCell {
     override func prepareForReuse() {
         super.prepareForReuse()
         currentImageLoadTask?.cancel()
+        imageView.image = nil
     }
     
     func setup(item: IMGHomeViewDisplayItem, imagesCache: IMGImageCacheService) {
         currentImageLoadTask =
-        imagesCache.getImage(from: item.imageURL, thumbnailImage: nil) { (image) in
-            DispatchQueue.main.async {
-                UIView.transition(with: self.imageView,
-                                  duration: 0.15,
-                                  options: [.transitionCrossDissolve],
-                                  animations: {
-                                    self.imageView.image = image
-                }, completion: nil)
-            }
+        imagesCache.getImage(from: item.imageURL, thumbnailImage: nil) {
+            [weak self] (image) in
+            self?.imageView.fadeSwitch(new: image)
         }
     }
 }

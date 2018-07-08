@@ -49,6 +49,18 @@
 		6FE5851020F2632500F6F095 /* UIFont+Extra.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE5850F20F2632500F6F095 /* UIFont+Extra.swift */; };
 		6FE5851220F26AFB00F6F095 /* IMGLoadingIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE5851120F26AFB00F6F095 /* IMGLoadingIndicator.swift */; };
 		6FE5851420F26C5900F6F095 /* IMGHomeLoadingOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE5851320F26C5900F6F095 /* IMGHomeLoadingOverlay.swift */; };
+		6FE5851720F2712600F6F095 /* IMGDetailsCoordinatorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE5851620F2712600F6F095 /* IMGDetailsCoordinatorInput.swift */; };
+		6FE5851A20F2718200F6F095 /* IMGDetailsViewInterfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE5851920F2718200F6F095 /* IMGDetailsViewInterfaces.swift */; };
+		6FE5851C20F2738600F6F095 /* IMGDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE5851B20F2738600F6F095 /* IMGDetailsViewController.swift */; };
+		6FE5852020F2759900F6F095 /* IMGDetailsTopCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE5851E20F2759900F6F095 /* IMGDetailsTopCell.swift */; };
+		6FE5852120F2759900F6F095 /* IMGDetailsTopCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6FE5851F20F2759900F6F095 /* IMGDetailsTopCell.xib */; };
+		6FE5852320F278FD00F6F095 /* UIImageView+Fade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE5852220F278FD00F6F095 /* UIImageView+Fade.swift */; };
+		6FE5852620F27ADD00F6F095 /* IMGDetailsInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE5852420F27ADD00F6F095 /* IMGDetailsInfoCell.swift */; };
+		6FE5852720F27ADD00F6F095 /* IMGDetailsInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6FE5852520F27ADD00F6F095 /* IMGDetailsInfoCell.xib */; };
+		6FE5852A20F27D3800F6F095 /* IMGDetailsControlCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE5852820F27D3800F6F095 /* IMGDetailsControlCell.swift */; };
+		6FE5852B20F27D3800F6F095 /* IMGDetailsControlCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6FE5852920F27D3800F6F095 /* IMGDetailsControlCell.xib */; };
+		6FE5852E20F2801000F6F095 /* IMGDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE5852D20F2801000F6F095 /* IMGDetailsPresenter.swift */; };
+		6FE5853020F283BC00F6F095 /* IMGDetailsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE5852F20F283BC00F6F095 /* IMGDetailsCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,6 +121,18 @@
 		6FE5850F20F2632500F6F095 /* UIFont+Extra.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extra.swift"; sourceTree = "<group>"; };
 		6FE5851120F26AFB00F6F095 /* IMGLoadingIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IMGLoadingIndicator.swift; sourceTree = "<group>"; };
 		6FE5851320F26C5900F6F095 /* IMGHomeLoadingOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IMGHomeLoadingOverlay.swift; sourceTree = "<group>"; };
+		6FE5851620F2712600F6F095 /* IMGDetailsCoordinatorInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IMGDetailsCoordinatorInput.swift; sourceTree = "<group>"; };
+		6FE5851920F2718200F6F095 /* IMGDetailsViewInterfaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IMGDetailsViewInterfaces.swift; sourceTree = "<group>"; };
+		6FE5851B20F2738600F6F095 /* IMGDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IMGDetailsViewController.swift; sourceTree = "<group>"; };
+		6FE5851E20F2759900F6F095 /* IMGDetailsTopCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IMGDetailsTopCell.swift; sourceTree = "<group>"; };
+		6FE5851F20F2759900F6F095 /* IMGDetailsTopCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IMGDetailsTopCell.xib; sourceTree = "<group>"; };
+		6FE5852220F278FD00F6F095 /* UIImageView+Fade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Fade.swift"; sourceTree = "<group>"; };
+		6FE5852420F27ADD00F6F095 /* IMGDetailsInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IMGDetailsInfoCell.swift; sourceTree = "<group>"; };
+		6FE5852520F27ADD00F6F095 /* IMGDetailsInfoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IMGDetailsInfoCell.xib; sourceTree = "<group>"; };
+		6FE5852820F27D3800F6F095 /* IMGDetailsControlCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IMGDetailsControlCell.swift; sourceTree = "<group>"; };
+		6FE5852920F27D3800F6F095 /* IMGDetailsControlCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IMGDetailsControlCell.xib; sourceTree = "<group>"; };
+		6FE5852D20F2801000F6F095 /* IMGDetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IMGDetailsPresenter.swift; sourceTree = "<group>"; };
+		6FE5852F20F283BC00F6F095 /* IMGDetailsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IMGDetailsCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -207,6 +231,9 @@
 		6F30436B20F248D0001D4151 /* Details */ = {
 			isa = PBXGroup;
 			children = (
+				6FE5852C20F2800100F6F095 /* Presenter */,
+				6FE5851820F2716D00F6F095 /* View */,
+				6FE5851520F270E100F6F095 /* Coordinator */,
 			);
 			path = Details;
 			sourceTree = "<group>";
@@ -249,6 +276,7 @@
 			children = (
 				6F36EC0F20F17F0A001E54AF /* URLComponents+Query.swift */,
 				6FE5850F20F2632500F6F095 /* UIFont+Extra.swift */,
+				6FE5852220F278FD00F6F095 /* UIImageView+Fade.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -383,6 +411,46 @@
 			path = ImageCache;
 			sourceTree = "<group>";
 		};
+		6FE5851520F270E100F6F095 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				6FE5851620F2712600F6F095 /* IMGDetailsCoordinatorInput.swift */,
+				6FE5852F20F283BC00F6F095 /* IMGDetailsCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		6FE5851820F2716D00F6F095 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6FE5851920F2718200F6F095 /* IMGDetailsViewInterfaces.swift */,
+				6FE5851B20F2738600F6F095 /* IMGDetailsViewController.swift */,
+				6FE5851D20F274D700F6F095 /* Cells */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6FE5851D20F274D700F6F095 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				6FE5851E20F2759900F6F095 /* IMGDetailsTopCell.swift */,
+				6FE5851F20F2759900F6F095 /* IMGDetailsTopCell.xib */,
+				6FE5852420F27ADD00F6F095 /* IMGDetailsInfoCell.swift */,
+				6FE5852520F27ADD00F6F095 /* IMGDetailsInfoCell.xib */,
+				6FE5852820F27D3800F6F095 /* IMGDetailsControlCell.swift */,
+				6FE5852920F27D3800F6F095 /* IMGDetailsControlCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		6FE5852C20F2800100F6F095 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				6FE5852D20F2801000F6F095 /* IMGDetailsPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -467,8 +535,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6FE5852720F27ADD00F6F095 /* IMGDetailsInfoCell.xib in Resources */,
 				6FAEBEA920F0FDF4005F771F /* LaunchScreen.storyboard in Resources */,
 				6F75910920F25015000C00F5 /* IMGHomeItemCell.xib in Resources */,
+				6FE5852120F2759900F6F095 /* IMGDetailsTopCell.xib in Resources */,
+				6FE5852B20F27D3800F6F095 /* IMGDetailsControlCell.xib in Resources */,
 				6F09B6E120F168860002F385 /* Cartfile in Resources */,
 				6FAEBEA620F0FDF4005F771F /* Assets.xcassets in Resources */,
 			);
@@ -513,10 +584,14 @@
 				6FE5850820F25A4800F6F095 /* IMGHomePresenter.swift in Sources */,
 				6F75910820F25015000C00F5 /* IMGHomeItemCell.swift in Sources */,
 				6F30434820F2179F001D4151 /* IMGImageCacheManager+Helpers.swift in Sources */,
+				6FE5852320F278FD00F6F095 /* UIImageView+Fade.swift in Sources */,
 				6FE5850C20F2600000F6F095 /* IMGAppCoordinator.swift in Sources */,
 				6FC818B320F20B8E00478BCD /* IMGImageCacheManager.swift in Sources */,
 				6F36EC1820F1882C001E54AF /* IMGResult.swift in Sources */,
 				6FE5851020F2632500F6F095 /* UIFont+Extra.swift in Sources */,
+				6FE5852020F2759900F6F095 /* IMGDetailsTopCell.swift in Sources */,
+				6FE5852A20F27D3800F6F095 /* IMGDetailsControlCell.swift in Sources */,
+				6FE5851C20F2738600F6F095 /* IMGDetailsViewController.swift in Sources */,
 				6F75910020F24BB8000C00F5 /* IMGCoordinator.swift in Sources */,
 				6F7590FB20F24995000C00F5 /* IMGHomeCoordinatorInput.swift in Sources */,
 				6FE5850A20F25CEE00F6F095 /* IMGAlertsCoordinator.swift in Sources */,
@@ -524,17 +599,22 @@
 				6F36EC1020F17F0A001E54AF /* URLComponents+Query.swift in Sources */,
 				6FC818B120F2063800478BCD /* IMGImageCacheService.swift in Sources */,
 				6F75910220F24D8D000C00F5 /* IMGHomeViewController.swift in Sources */,
+				6FE5852E20F2801000F6F095 /* IMGDetailsPresenter.swift in Sources */,
 				6F75910B20F252CD000C00F5 /* IMGReusable.swift in Sources */,
 				6F36EC1A20F191F7001E54AF /* IMGNetworkManager.swift in Sources */,
 				6F36EC0A20F177D2001E54AF /* IMGCancelable.swift in Sources */,
 				6FE5851220F26AFB00F6F095 /* IMGLoadingIndicator.swift in Sources */,
+				6FE5851720F2712600F6F095 /* IMGDetailsCoordinatorInput.swift in Sources */,
 				6F75910520F24DD4000C00F5 /* IMGHomeViewInterfaces.swift in Sources */,
 				6FE5851420F26C5900F6F095 /* IMGHomeLoadingOverlay.swift in Sources */,
 				6F30435720F22E34001D4151 /* IMGContentManager.swift in Sources */,
+				6FE5852620F27ADD00F6F095 /* IMGDetailsInfoCell.swift in Sources */,
 				6FC818AE20F1FE0E00478BCD /* IMGContentService+DataModels.swift in Sources */,
+				6FE5853020F283BC00F6F095 /* IMGDetailsCoordinator.swift in Sources */,
 				6FAEBE9F20F0FDF3005F771F /* AppDelegate.swift in Sources */,
 				6F36EC1320F18271001E54AF /* IMGContentService.swift in Sources */,
 				6F36EC0520F1760D001E54AF /* IMGNetworkService.swift in Sources */,
+				6FE5851A20F2718200F6F095 /* IMGDetailsViewInterfaces.swift in Sources */,
 				6FE5850E20F2606200F6F095 /* IMGHomeCoordinator.swift in Sources */,
 				6F36EC0E20F17C7D001E54AF /* IMGLocalizedError.swift in Sources */,
 			);
