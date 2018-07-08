@@ -62,6 +62,12 @@
 		6FE5852E20F2801000F6F095 /* IMGDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE5852D20F2801000F6F095 /* IMGDetailsPresenter.swift */; };
 		6FE5853020F283BC00F6F095 /* IMGDetailsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE5852F20F283BC00F6F095 /* IMGDetailsCoordinator.swift */; };
 		6FE5853220F28A2900F6F095 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 6FE5853120F28A2900F6F095 /* README.md */; };
+		6FE5853520F28AED00F6F095 /* IMGFilterViewInterfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE5853420F28AED00F6F095 /* IMGFilterViewInterfaces.swift */; };
+		6FE5853820F28B3B00F6F095 /* IMGFilterCoordinatorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE5853720F28B3B00F6F095 /* IMGFilterCoordinatorInput.swift */; };
+		6FE5853A20F28C8400F6F095 /* IMGFilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE5853920F28C8400F6F095 /* IMGFilterViewController.swift */; };
+		6FE5853C20F28FBD00F6F095 /* IMGFilterOptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE5853B20F28FBD00F6F095 /* IMGFilterOptionsViewController.swift */; };
+		6FE5853F20F292A100F6F095 /* IMGFilterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE5853E20F292A100F6F095 /* IMGFilterPresenter.swift */; };
+		6FE5854120F2978700F6F095 /* IMGFilterCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE5854020F2978700F6F095 /* IMGFilterCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -135,6 +141,12 @@
 		6FE5852D20F2801000F6F095 /* IMGDetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IMGDetailsPresenter.swift; sourceTree = "<group>"; };
 		6FE5852F20F283BC00F6F095 /* IMGDetailsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IMGDetailsCoordinator.swift; sourceTree = "<group>"; };
 		6FE5853120F28A2900F6F095 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
+		6FE5853420F28AED00F6F095 /* IMGFilterViewInterfaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IMGFilterViewInterfaces.swift; sourceTree = "<group>"; };
+		6FE5853720F28B3B00F6F095 /* IMGFilterCoordinatorInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IMGFilterCoordinatorInput.swift; sourceTree = "<group>"; };
+		6FE5853920F28C8400F6F095 /* IMGFilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IMGFilterViewController.swift; sourceTree = "<group>"; };
+		6FE5853B20F28FBD00F6F095 /* IMGFilterOptionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IMGFilterOptionsViewController.swift; sourceTree = "<group>"; };
+		6FE5853E20F292A100F6F095 /* IMGFilterPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IMGFilterPresenter.swift; sourceTree = "<group>"; };
+		6FE5854020F2978700F6F095 /* IMGFilterCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IMGFilterCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -216,9 +228,9 @@
 		6F30436920F248BD001D4151 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				6F75910320F24D94000C00F5 /* View */,
-				6F7590FC20F24A41000C00F5 /* Presenter */,
 				6F7590F920F24938000C00F5 /* Coordinator */,
+				6F7590FC20F24A41000C00F5 /* Presenter */,
+				6F75910320F24D94000C00F5 /* View */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -226,6 +238,9 @@
 		6F30436A20F248C6001D4151 /* Filter */ = {
 			isa = PBXGroup;
 			children = (
+				6FE5853620F28B2800F6F095 /* Coordinator */,
+				6FE5853D20F2929100F6F095 /* Presenter */,
+				6FE5853320F28A8200F6F095 /* View */,
 			);
 			path = Filter;
 			sourceTree = "<group>";
@@ -233,9 +248,9 @@
 		6F30436B20F248D0001D4151 /* Details */ = {
 			isa = PBXGroup;
 			children = (
+				6FE5851520F270E100F6F095 /* Coordinator */,
 				6FE5852C20F2800100F6F095 /* Presenter */,
 				6FE5851820F2716D00F6F095 /* View */,
-				6FE5851520F270E100F6F095 /* Coordinator */,
 			);
 			path = Details;
 			sourceTree = "<group>";
@@ -454,6 +469,33 @@
 			path = Presenter;
 			sourceTree = "<group>";
 		};
+		6FE5853320F28A8200F6F095 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6FE5853420F28AED00F6F095 /* IMGFilterViewInterfaces.swift */,
+				6FE5853920F28C8400F6F095 /* IMGFilterViewController.swift */,
+				6FE5853B20F28FBD00F6F095 /* IMGFilterOptionsViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6FE5853620F28B2800F6F095 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				6FE5853720F28B3B00F6F095 /* IMGFilterCoordinatorInput.swift */,
+				6FE5854020F2978700F6F095 /* IMGFilterCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		6FE5853D20F2929100F6F095 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				6FE5853E20F292A100F6F095 /* IMGFilterPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -584,21 +626,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6FE5853520F28AED00F6F095 /* IMGFilterViewInterfaces.swift in Sources */,
 				6F7590FE20F24A71000C00F5 /* IMGListView.swift in Sources */,
 				6FE5850820F25A4800F6F095 /* IMGHomePresenter.swift in Sources */,
 				6F75910820F25015000C00F5 /* IMGHomeItemCell.swift in Sources */,
+				6FE5854120F2978700F6F095 /* IMGFilterCoordinator.swift in Sources */,
 				6F30434820F2179F001D4151 /* IMGImageCacheManager+Helpers.swift in Sources */,
 				6FE5852320F278FD00F6F095 /* UIImageView+Fade.swift in Sources */,
 				6FE5850C20F2600000F6F095 /* IMGAppCoordinator.swift in Sources */,
 				6FC818B320F20B8E00478BCD /* IMGImageCacheManager.swift in Sources */,
+				6FE5853C20F28FBD00F6F095 /* IMGFilterOptionsViewController.swift in Sources */,
 				6F36EC1820F1882C001E54AF /* IMGResult.swift in Sources */,
 				6FE5851020F2632500F6F095 /* UIFont+Extra.swift in Sources */,
+				6FE5853A20F28C8400F6F095 /* IMGFilterViewController.swift in Sources */,
 				6FE5852020F2759900F6F095 /* IMGDetailsTopCell.swift in Sources */,
 				6FE5852A20F27D3800F6F095 /* IMGDetailsControlCell.swift in Sources */,
 				6FE5851C20F2738600F6F095 /* IMGDetailsViewController.swift in Sources */,
 				6F75910020F24BB8000C00F5 /* IMGCoordinator.swift in Sources */,
 				6F7590FB20F24995000C00F5 /* IMGHomeCoordinatorInput.swift in Sources */,
 				6FE5850A20F25CEE00F6F095 /* IMGAlertsCoordinator.swift in Sources */,
+				6FE5853F20F292A100F6F095 /* IMGFilterPresenter.swift in Sources */,
 				6F30435920F22EF4001D4151 /* IMGContentManager+Helpers.swift in Sources */,
 				6F36EC1020F17F0A001E54AF /* URLComponents+Query.swift in Sources */,
 				6FC818B120F2063800478BCD /* IMGImageCacheService.swift in Sources */,
@@ -614,6 +661,7 @@
 				6F30435720F22E34001D4151 /* IMGContentManager.swift in Sources */,
 				6FE5852620F27ADD00F6F095 /* IMGDetailsInfoCell.swift in Sources */,
 				6FC818AE20F1FE0E00478BCD /* IMGContentService+DataModels.swift in Sources */,
+				6FE5853820F28B3B00F6F095 /* IMGFilterCoordinatorInput.swift in Sources */,
 				6FE5853020F283BC00F6F095 /* IMGDetailsCoordinator.swift in Sources */,
 				6FAEBE9F20F0FDF3005F771F /* AppDelegate.swift in Sources */,
 				6F36EC1320F18271001E54AF /* IMGContentService.swift in Sources */,

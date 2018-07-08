@@ -25,6 +25,7 @@ class IMGHomeLoadingOverlay: UIView, IMGLoadingIndicator {
         super.init(frame: frame)
         autoresizingMask = [.flexibleWidth, .flexibleHeight]
         backgroundColor = UIColor(white: 0.9, alpha: 0.2)
+        indicator.translatesAutoresizingMaskIntoConstraints = false
         addSubview(indicator)
         [indicator.centerXAnchor.constraint(equalTo: centerXAnchor),
          indicator.centerYAnchor.constraint(equalTo: centerYAnchor)]

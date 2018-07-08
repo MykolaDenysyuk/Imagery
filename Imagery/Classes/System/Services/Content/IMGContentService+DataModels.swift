@@ -15,8 +15,8 @@ enum IMGContent {
         let search: String?
         let pageSize: Int?
         let page: Int?
-        let category: String?
-        let order: String?
+        var category: String?
+        var order: String?
         
         static let `default` = Query(search: nil, pageSize: nil, page: nil, category: nil, order: nil)
     }

@@ -22,6 +22,8 @@ class IMGHomePresenter {
     let imagesCache: IMGImageCacheService
     let contentManager: IMGContentService
     var items = [Container]()
+    /// The query that is used to load currently presented content
+    var currentQuery = IMGContent.Query.default
     
     // MARK: Initializer
     
@@ -36,6 +38,7 @@ class IMGHomePresenter {
     // MARK: Actions
     
     func load(query: IMGContent.Query = .default, complete: @escaping () -> Void) {
+        currentQuery = query
         let _ =
         contentManager.search(query: query) {
             [weak self ] (result) in
@@ -98,8 +101,11 @@ extension IMGHomePresenter: IMGHomeViewOutput {
     }
     
     func viewDidTapFilter(_ view: View) {
-        coordinator.showFilter { (data) in
-            // todo: apply filter and reload
+        coordinator.showFilter(currentQuery: currentQuery) {
+            [weak self, weak view] (newQuery) in
+            self?.load(query: newQuery, complete: {
+                view?.reloadData()
+            })
         }
     }
     

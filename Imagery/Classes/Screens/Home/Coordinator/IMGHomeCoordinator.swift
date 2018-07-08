@@ -27,8 +27,11 @@ class IMGHomeCoordinator: IMGCoordinator, IMGHomeCoordinatorInput {
         rootController = controller
     }
     
-    func showFilter(callback: (Any) -> Void) {
-        // todo
+    func showFilter(currentQuery: IMGContent.Query, callback: @escaping (IMGContent.Query) -> Void) {
+        guard let root = rootController else { fatalError("root controller required!") }
+        
+        let filter = IMGFilterCoordinator()
+        filter.start(from: root, with: IMGFilterCoordinatorData(query: currentQuery, callback: callback))
     }
     
     func showDetails(for item: IMGContent.Item) {
